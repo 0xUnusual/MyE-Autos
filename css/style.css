@@ -543,63 +543,131 @@ p {
     color: var(--text-muted);
 }
 
-/* Gallery */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 20px;
+/* Featured Cars / Destacados */
+.destacados-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
 }
 
-.gallery-item {
-    position: relative;
-    height: 300px;
+.destacados-title {
+    text-align: left;
+}
+
+.text-accent {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+}
+
+.destacados-title h2 {
+    font-size: 2.5rem;
+    letter-spacing: -0.5px;
+}
+
+.explore-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: var(--accent);
+    font-size: 0.95rem;
+}
+
+.explore-link:hover {
+    color: var(--text-muted);
+}
+
+.destacados-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.car-card {
+    display: flex;
+    flex-direction: column;
     border-radius: 16px;
     overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    background: var(--bg-glass);
+    border: 1px solid var(--border-color);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.gallery-item:hover {
-    transform: translateY(-8px) scale(1.02);
+.car-card:hover {
+    transform: translateY(-8px);
     box-shadow: 0 15px 35px rgba(0,0,0,0.6);
-    z-index: 10;
 }
 
-.gallery-item img {
-    display: none;
+.car-image {
+    height: 240px;
+    background-size: cover;
+    background-position: center;
 }
-/* Use unsplash auto-formatting for now instead of standard img tags*/
-.gallery-item.img-1 { background: url('https://images.unsplash.com/photo-1549399542-7e3f8b79c341?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover; }
-.gallery-item.img-2 { background: url('https://images.unsplash.com/photo-1563720223185-11003d516935?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover; }
-.gallery-item.img-3 { background: url('https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover; }
-.gallery-item.img-4 { background: url('https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover; }
-.gallery-item.img-5 { background: url('https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover; }
-.gallery-item.img-6 { background: url('https://images.unsplash.com/photo-1616455589139-38b973685e19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover; }
 
-.gallery-item .overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+.car-info {
+    padding: 24px;
     display: flex;
-    align-items: flex-end;
-    padding: 30px;
-    opacity: 0;
-    transition: var(--transition-smooth);
+    flex-direction: column;
+    flex-grow: 1;
 }
 
-.gallery-item:hover .overlay {
-    opacity: 1;
+.car-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
 }
 
-.gallery-item span {
-    font-size: 1.2rem;
-    font-weight: 600;
-    transform: translateY(20px);
-    transition: var(--transition-smooth);
+.car-title-row h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 
-.gallery-item:hover span {
-    transform: translateY(0);
+.car-price {
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 1.1rem;
+}
+
+.car-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.car-specs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.car-specs li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.car-specs li i {
+    font-size: 1.1rem;
+}
+
+.car-btn {
+    margin-top: auto;
+    width: 100%;
+    background-color: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.car-btn:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: var(--text-main);
 }
 
 /* FAQ */
