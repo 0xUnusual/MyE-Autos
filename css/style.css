@@ -741,6 +741,24 @@ footer {
     gap: 10px;
 }
 
+.social-links {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    font-size: 1.8rem;
+    color: var(--text-main);
+    display: inline-flex;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.social-links a:hover {
+    color: #E1306C; /* Instagram Color */
+    transform: scale(1.1) translateY(-3px);
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 40px;
