@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyE Autos | Solución SRL</title>
+    <meta name="description" content="Encuentra el auto de tus sueños en MyE Autos solución SRL. Tenemos los mejores vehículos, calidad garantizada y un excelente servicio en Santo Domingo.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Icons (Phosphor Icons) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-mye">MyE</span> Autos
+            </a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#por-que-nosotros">Por qué nosotros</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <a href="#contacto" class="btn-primary-outline nav-cta">Contáctanos</a>
+            <button class="menu-toggle" aria-label="Abrir menú"><i class="ph ph-list"></i></button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <button class="close-menu" aria-label="Cerrar menú"><i class="ph ph-x"></i></button>
+        <ul class="mobile-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#por-que-nosotros">Por qué nosotros</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contacto">Contáctanos</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <div class="hero-text">
+                <span class="badge">MyE Autos solución SRL</span>
+                <h1>El poder de elegir <br><span class="highlight">sin límites</span></h1>
+                <p>Descubre nuestra selección premium de vehículos en Santo Domingo. Conducir nunca se había sentido tan excepcional.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <i class="ph-fill ph-star"></i>
+                        <span>5.0 (Reseñas comprobadas)</span>
+                    </div>
+                    <div class="stat">
+                        <i class="ph ph-map-pin"></i>
+                        <span>C. Paralela Principal, Santo Domingo</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-form-container glass-panel">
+                <h3>Cotiza tu vehículo ideal</h3>
+                <p>Déjanos tus datos y un asesor se pondrá en contacto contigo de inmediato.</p>
+                <form id="contact-form" class="hero-form">
+                    <div class="form-group">
+                        <label for="name">Nombre Completo</label>
+                        <input type="text" id="name" placeholder="Ej. Juan Pérez" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" placeholder="Ej. (809) 123-4567" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="interest">¿Qué buscas?</label>
+                        <select id="interest" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="Suv">SUV</option>
+                            <option value="Sedán">Sedán</option>
+                            <option value="Deportivo">Deportivo</option>
+                            <option value="Comercial">Vehículo Comercial</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary">Solicitar Información <i class="ph ph-arrow-right"></i></button>
+                    <p class="form-success-msg" style="display:none; color: var(--success); margin-top: 10px; font-size: 0.9rem;">¡Gracias! Nos pondremos en contacto pronto.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services section">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <h2>Nuestros Servicios</h2>
+                <p>En MyE Autos te brindamos una experiencia integral para que tu única preocupación sea disfrutar el camino.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="icon-wrapper"><i class="ph ph-car-profile"></i></div>
+                    <h3>Venta de Vehículos</h3>
+                    <p>Un catálogo exclusivo de vehículos importados, inspeccionados y con calidad garantizada.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="icon-wrapper"><i class="ph ph-bank"></i></div>
+                    <h3>Financiamiento</h3>
+                    <p>Las mejores tasas del mercado. Gestionamos tu préstamo rápidamente con bancos locales.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="icon-wrapper"><i class="ph ph-wrench"></i></div>
+                    <h3>Garantía y Respaldo</h3>
+                    <p>Tranquilidad asegurada. Ofrecemos cobertura de garantía para motor y transmisión.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="icon-wrapper"><i class="ph ph-handshake"></i></div>
+                    <h3>Trade-in</h3>
+                    <p>Aceptamos tu vehículo actual como parte del pago inicial para tu nueva adquisición.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section id="por-que-nosotros" class="why-us section bg-darker">
+        <div class="section-container">
+            <div class="why-content">
+                <div class="why-text reveal">
+                    <h2>¿Por qué elegir <br>MyE Autos?</h2>
+                    <p>Nos enorgullece ser calificados con <strong>5.0 estrellas</strong>. La satisfacción de nuestros clientes es nuestra mejor presentación.</p>
+                    <ul class="benefits-list">
+                        <li>
+                            <i class="ph-fill ph-check-circle"></i>
+                            <div>
+                                <h4>Calidad Comprobada</h4>
+                                <p>Cada automóvil pasa por un riguroso proceso de inspección mecánica y estética.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="ph-fill ph-check-circle"></i>
+                            <div>
+                                <h4>Transparencia Total</h4>
+                                <p>Cero costos ocultos. Historial del vehículo claro y disponible al instante.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="ph-fill ph-check-circle"></i>
+                            <div>
+                                <h4>Atención Personalizada</h4>
+                                <p>Te asesoramos de principio a fin para encontrar la opción perfecta que se ajuste a tus necesidades y presupuesto.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="why-image reveal">
+                    <!-- Image Placeholder generated dynamically via CSS or JS later -->
+                    <div class="image-wrapper glass-panel">
+                        <div class="rating-badge">
+                            <h2>5.0</h2>
+                            <div class="stars">
+                                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                            </div>
+                            <span>Basado en opiniones</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="gallery section">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <h2>Nuestra Flota</h2>
+                <p>Echa un vistazo a algunos de los modelos más exclusivos que han pasado por nuestro showroom.</p>
+            </div>
+            <div class="gallery-grid">
+                <!-- These will ideally be images, using placeholder divs for the mockup -->
+                <div class="gallery-item reveal img-1"><div class="overlay"><span>SUV Premium</span></div></div>
+                <div class="gallery-item reveal img-2"><div class="overlay"><span>Sedán de Lujo</span></div></div>
+                <div class="gallery-item reveal img-3"><div class="overlay"><span>Deportivos</span></div></div>
+                <div class="gallery-item reveal img-4"><div class="overlay"><span>Elegancia</span></div></div>
+                <div class="gallery-item reveal img-5"><div class="overlay"><span>Todo Terreno</span></div></div>
+                <div class="gallery-item reveal img-6"><div class="overlay"><span>Familiar</span></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq section bg-darker">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <h2>Preguntas Frecuentes</h2>
+                <p>Resolvemos tus dudas principales para que des el paso con total seguridad.</p>
+            </div>
+            <div class="faq-container reveal">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Cuáles son sus horarios de atención?</span>
+                        <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Estamos abiertos de Lunes a Sábados. Los sábados trabajamos hasta las 5:00 a.m. para adaptarnos a tu disponibilidad.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Aceptan vehículos como método de pago (Trade-in)?</span>
+                        <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, aceptamos tu vehículo actual tras una rápida inspección técnica para valorarlo e incluirlo como parte de tu cuota inicial.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Ofrecen facilidades de financiamiento?</span>
+                        <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Totalmente. Trabajamos de la mano con los principales bancos e instituciones financieras para asegurarte la mejor tasa del mercado.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Dónde están ubicados?</span>
+                        <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nuestra instalación principal está en C. Paralela Principal, Santo Domingo 11515. Contamos con un espacio acogedor para que veas nuestro inventario.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="contacto" class="cta-section section">
+        <div class="cta-container glass-panel reveal">
+            <h2>¿Listo para subir de nivel?</h2>
+            <p>Agenda hoy mismo tu cita o contáctanos directamente para recibir atención VIP. Nuestro equipo de ventas está listo para atenderte.</p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/18094453986" target="_blank" class="btn-primary btn-large">
+                    <i class="ph-fill ph-whatsapp-logo"></i> Chatear por WhatsApp
+                </a>
+                <a href="tel:+18094453986" class="btn-secondary btn-large">
+                    <i class="ph ph-phone"></i> (809) 445-3986
+                </a>
+            </div>
+            <div class="location-info mt-top">
+                <i class="ph ph-map-pin"></i> C. Paralela Principal, Santo Domingo 11515
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-mye">MyE</span> Autos
+                </a>
+                <p>Tu dealer de confianza en Santo Domingo. Calidad, garantía y la atención que mereces.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#galeria">Inventario</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Información</h4>
+                <p><i class="ph ph-phone"></i> (809) 445-3986</p>
+                <p><i class="ph ph-map-pin"></i> Santo Domingo 11515</p>
+                <p><i class="ph ph-clock"></i> Lun - Sáb</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MyE Autos Solución SRL. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/18094453986" target="_blank" class="floating-whatsapp" aria-label="Chat en WhatsApp">
+        <i class="ph-fill ph-whatsapp-logo"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
